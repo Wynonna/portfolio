@@ -1,0 +1,29 @@
+from turtle import *
+import math
+
+# Name your Turtle.
+t = Turtle()
+
+# Set Up your screen and starting position.
+setup(500,300)
+x_pos = 0
+y_pos = 0
+t.setposition(x_pos, y_pos)
+
+### Write your code below:
+
+        ### This is the square on the first quadrant.
+t.forward(100)
+t.right(90)
+t.back(100)
+t.left(90)
+t.forward(-100)
+t.right(90)
+t.back(-100)
+t.left(90)
+        ### This is a triangle on the third quadrant.
+# t.right(135)
+# t.back(100)
+# t.forward(100)
+# Close window on click.
+exitonclick()
