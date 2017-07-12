@@ -30,7 +30,7 @@ for pixel in image_list:
             recolored.append(yellow)
 
 print(recolored)
-
+ 
 new_image = Image.new("RGB", my_image.size) #Creates a new image that will be the same size as the original image.
 new_image.putdata(recolored) #Adds the data from the recolored list to the image.
 new_image.show() #show the new image on the screen
