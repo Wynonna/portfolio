@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Wynonna's Journey in GWC</title>
+
+    <style type="text/css">
+
+
+
+      body {font-family:Arial;}
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+      }
+      h4 {
+        text-align: center;
+      }
+      h5 {
+        text-align: center;
+      }
+      iframe {
+        display:block;
+        margin:auto;
+      }
+      .parallex {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTpPGKaO0_yR9HNkUqSXtvihzHS3iDFAtWBUrPx830oAf7kx5yLw");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+      </style>
+
+    <font color="white"> </font>
+
+
+
+
+</head>
+<body>
+
+
+
+
+
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+      <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+      <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+    </div>
+
+    <div id="London" class="tabcontent">
+      <h3>London</h3>
+      <p>London is the capital city of England.</p>
+    </div>
+
+    <div id="Paris" class="tabcontent">
+      <h3>Paris</h3>
+      <p>Paris is the capital of France.</p>
+    </div>
+
+    <div id="Tokyo" class="tabcontent">
+      <h3>Tokyo</h3>
+      <p>Tokyo is the capital of Japan.</p>
+    </div>
+
+    <script>
+    function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+    </script>
+
+
+    <div class = "parallex">
+    <h1><font color="white">Welcome to Wynonna's Journey in Girls Who Code!</font></h1>
+    <h2><font color="white">Wynonna Chambi-Rocha</font></h2>
+
+    <body link="black">
+    <h5><font color="white">This is the link to my <a href="https://github.com/wynonna/portfolio/blob/master/text_adventure_starter.py">text_adventure_starter.py</a> on my GitHub.</h5>
+
+    <h4><font color="white">Monday, June 10, 2017 - Intro to Robotics</font><h4>
+
+    <p><font color="white">The following pictures are from the circuitry challenge:</font><p>
+    <img src="http://i64.tinypic.com/2q9xtz4.jpg" "" alt="Overhead of the Circuit" width="250" height="250">
+    <img src="http://i64.tinypic.com/n2n1j4.jpg" "" alt="Angle One of the Circuit" width="350" height="250">
+    <img src="http://i64.tinypic.com/59zuww.jpg" "" alt="Angle Two of the Circuit" width="350" height="250">
+    <h4><font color="white">Friday, 14, 2017 - Creating a Robot Dance Party</font></h4>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ODVKsaHLTw4" frameborder="0" allowfullscreen></iframe>
+</div>
+  </body>
+</html>
+
+<!-- 
+https://www.w3schools.com/howto/howto_js_tabs.asp
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade 
+https://stackoverflow.com/questions/31497639/make-drop-down-menu-push-content-down-on-click
+--> 
